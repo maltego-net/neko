@@ -1,0 +1,68 @@
+/* src/App.css */
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  justify-content: center; /* по горизонтали */
+  align-items: center;     /* по вертикали */
+  height: 100vh;           /* на всю высоту окна */
+  background: #111;        /* можно тёмный фон, чтобы было понятно */
+}
+
+
+
+
+/* Контейнер для текста, располагаем поверх кнопки */
+.magnetic-btn {
+  position: relative;
+  width: 240px;
+  height: 60px;
+  cursor: pointer;
+}
+
+/* базовый SVG-контур */
+.magnetic-btn__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: filter .2s, opacity .2s;
+  filter: drop-shadow(0 0 8px limegreen);
+}
+.magnetic-btn:hover .magnetic-btn__img {
+  filter: drop-shadow(0 0 12px limegreen) drop-shadow(0 0 8px mediumspringgreen);
+}
+
+/* контейнер для текста (каждая буква отдельно) */
+.mb-text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2.2rem;
+  pointer-events: none;
+}
+
+.mb-letter {
+  display: inline-block;
+  color: #fafafa;
+  text-shadow: 0 0 1px #ffffff;
+}
+
+.mb-text-container.hovered .mb-letter {
+  text-shadow: 0 0 8px #7fff00, 0 0 12px #00ffff;
+}
+
+/* стиль осколков */
+.magnetic-btn__frag {
+  position: absolute;
+  transform-origin: center center;
+  pointer-events: none;
+}
+
+

@@ -1,0 +1,191 @@
+.home {
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background: url('../../public/background.PNG') center repeat;
+  color: #fff;
+  overflow-x: hidden;
+}
+.gallery__nft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery__image-frame {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 1rem;
+  background: var(--bg-primary);
+  z-index: 0;
+  overflow: visible; 
+}
+
+.gallery__image-frame::before {
+  content: "";
+  position: absolute;
+  top: -2.5px;
+  left: -2.5px;
+  right: -2.5px;
+  bottom: -2.5px;
+  border-radius: calc(1rem + 5px);
+  z-index: -1;
+
+  background: linear-gradient(
+    90deg,
+    var(--gradient-start),
+    var(--gradient-end),
+    var(--gradient-start)
+  );
+  background-size: 300% 300%;
+  animation: pulseGradient 6s ease-in-out infinite;
+
+  filter: blur(2px); /* добавим glow */
+}
+
+
+.gallery__image {
+  display: block;
+  width: 100%;
+  border-radius: 1rem;
+  background: var(--bg-primary);
+}
+
+@keyframes pulseGradient {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gallery__title {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--text-light);
+}
+
+.gallery__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.gallery__label {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+
+.gallery__input-wrapper {
+  position: relative;
+  display: flex;
+  max-width: 160px;
+  flex: 1;
+}
+
+.gallery__input-wrapper .input {
+  width: 100%;
+  padding: 0.6rem 1rem 0.6rem 1rem;
+  padding-right: 2.5rem;
+  background: var(--bg-primary);
+  color: var(--text-light);
+  font-size: 1rem;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  border-image: linear-gradient(90deg, var(--gradient-start), var(--gradient-end)) 1;
+  box-shadow: 0 0 6px var(--shadow-light), 0 0 12px var(--shadow-blue);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.gallery__input-wrapper .input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.gallery__dice-btn {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery__dice-btn img {
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+.gallery__btn {
+  padding: 0.6rem 1.2rem;
+  background: var(--bg-primary);
+  color: var(--text-light);
+  font-weight: bold;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  border-image: linear-gradient(90deg, var(--gradient-start), var(--gradient-end)) 1;
+  box-shadow: 0 0 6px var(--shadow-light), 0 0 12px var(--shadow-blue);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.gallery__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px var(--gradient-start), 0 0 24px var(--gradient-end), inset 0 0 4px var(--shadow-light);
+}
+
+.gallery__error {
+  color: red;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.input {
+  outline: none;
+  transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.input:focus {
+  box-shadow:
+    0 0 12px var(--gradient-start),
+    0 0 24px var(--gradient-end),
+    inset 0 0 4px var(--shadow-light);
+  border-image: linear-gradient(90deg, var(--gradient-start), var(--gradient-end)) 1;
+  outline: none;
+}
+
+.input[type="number"]::-webkit-inner-spin-button,
+.input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input[type="number"] {
+  appearance: none;
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+}
+
+.home__footer {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.social-icon {
+  width: 34px;
+  height: 34px;
+  transition: transform 0.2s;
+}
+.social-icon:hover { transform: scale(1.1); }

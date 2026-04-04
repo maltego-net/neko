@@ -1,0 +1,114 @@
+.home {
+  min-height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background: url('../../public/background.PNG') center repeat;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.home__logo {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.home__center {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.home__cat img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.home__btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  transform: scale(1.5);
+}
+@media (max-width: 600px) {
+  .home__btn-wrapper { transform: scale(1); }
+}
+
+
+.home__btn-wrapper_mint {
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+  transform: scale(1);
+}
+@media (max-width: 600px) {
+  .home__btn-wrapper { transform: scale(1); }
+}
+
+.home__footer {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.social-icon {
+  width: 34px;
+  height: 34px;
+  transition: transform 0.2s;
+}
+.social-icon:hover { transform: scale(1.1); }
+
+.home__rows {
+  margin: 10rem 0;
+  width: 110%;
+  overflow: visible;
+}
+
+.home__row-text {
+  position: relative;
+  white-space: nowrap;
+  font-family: Montserrat, sans-serif;
+  font-weight: 800;
+  justify-content: center;
+  display: flex;
+  color: #39ff74da;
+  text-shadow: 0 0 4px rgba(0,255,55,0.8);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.home__row-text .letter {
+  position: relative;
+  display: inline-block;
+}
+
+.home__row-text .letter:nth-child(4n) {
+  margin-right: 0.2em;
+}
+/* Картинка над буквой */
+.home__row-text .overlay-img {
+  position: absolute;
+  width: 1em;    /* подгоните, если нужно: можно оставить без width/height и полагаться на scale */
+  height: 1em;
+  pointer-events: none;
+  z-index: 10;
+}
+
+@media (max-width: 600px) {
+  .home__row-text {
+    font-size: clamp(2rem, 10vw, 4rem);
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1023px) {
+  .home__row-text {
+    font-size: clamp(3rem, 7vw, 6rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .home__row-text {
+    font-size: clamp(4rem, 6vw, 8rem);
+  }
+}

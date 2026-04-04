@@ -1,0 +1,8 @@
+{
+  "name": "Ordineko E1",
+  "image": "/cat_O_1.PNG",
+  "attributes": [
+    { "trait_type": "Letter", "value": "E" },
+    { "trait_type": "Version", "value": "1" }
+  ]
+}
