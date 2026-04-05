@@ -18,7 +18,6 @@
 |------|--------|
 | ![home](docs/screenshot-home.png) | ![quests](docs/screenshot-quests.png) |
 
-> _Add screenshots to the `docs/` folder after taking them locally._
 
 ---
 

@@ -23,7 +23,7 @@ async function getOAuth2Link(req) {
   req.session.state        = state;
   return url;
 }
-
+    
 async function handleOAuth2Callback(req) {
   const { state, code } = req.query;
   if (state !== req.session.state) throw new Error('Invalid OAuth state');

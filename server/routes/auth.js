@@ -5,7 +5,7 @@ const User     = require('../models/User');
 
 // 1) Redirect to Twitter OAuth
 router.get('/twitter', passport.authenticate('twitter'));
-
+  
 // 2) OAuth callback
 router.get(
   '/twitter/callback',
