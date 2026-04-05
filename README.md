@@ -8,7 +8,7 @@
 
 > NFT community platform with a Twitter-based quest & airdrop system. Users authenticate via Twitter OAuth 2.0, complete social tasks, and register their Bitcoin Ordinals wallet for whitelist spots.
 
-**Live demo → [your-app.vercel.app](https://neko-steel.vercel.app/)**
+**Live demo → [https://neko-steel.vercel.app/](https://neko-steel.vercel.app/)**
 
 ---
 
