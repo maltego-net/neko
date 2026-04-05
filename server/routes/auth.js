@@ -13,7 +13,6 @@ router.get(
   async (req, res) => {
     try {
       const profile = req.user;
-      // upsert: создаём новую запись или обновляем существующую
       await User.findOneAndUpdate(
         { twitterId: profile.id },
         {
