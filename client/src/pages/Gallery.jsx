@@ -92,7 +92,7 @@ export default function Gallery() {
     <footer className="home__footer">
       <a href="https://x.com/ordineko" target="_blank" rel="noreferrer">
         <img src={xIcon} alt="X" className="social-icon" />
-      </a>
+      </a>    
       <a href="https://discord.gg/FcyyEAXAmW" target="_blank" rel="noreferrer">
         <img src={discordIcon} alt="Discord" className="social-icon" />
       </a>
