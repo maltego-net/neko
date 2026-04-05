@@ -62,7 +62,7 @@
 │  /api/* proxy    Twitter OAuth 2.0              │
 └─────────────────────────────────────────────────┘
 ```
-
+ 
 ---
 
 ## Quick Start
@@ -70,7 +70,7 @@
 ### Docker (recommended)
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/neko.git
+git clone https://github.com/maltego-net/neko.git
 cd neko
 
 cp server/.env.example server/.env
