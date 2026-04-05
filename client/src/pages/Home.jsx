@@ -123,9 +123,8 @@ export default function Home() {
     return () => window.removeEventListener('resize', check);
   }, []);
 
-  const wordsPerRow      = 5;
-  const rowsCount        = 4;
-  const lettersPerWord   = 4;  
+  const wordsPerRow = 5;
+  const rowsCount   = 4;
 
   const renderRow = (rowIdx) => (
     <div key={rowIdx} className="home__row-text">

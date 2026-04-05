@@ -40,9 +40,8 @@ export default function Gallery() {
     window.open(url, '_blank');
   };
 
-  useEffect(() => {
-    handleRandom();
-  }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => { handleRandom(); }, []);
 
   return (
     
