@@ -4,7 +4,7 @@
 ![Node.js](https://img.shields.io/badge/Node.js-18-339933?logo=node.js&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-7-47A248?logo=mongodb&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&logoColor=white)
-![CI](https://github.com/YOUR_USERNAME/neko/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/maltego-net/neko/actions/workflows/ci.yml/badge.svg)
 
 > NFT community platform with a Twitter-based quest & airdrop system. Users authenticate via Twitter OAuth 2.0, complete social tasks, and register their Bitcoin Ordinals wallet for whitelist spots.
 
