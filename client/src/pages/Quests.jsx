@@ -171,7 +171,7 @@ export default function Quests() {
           {isConnected &&
             completed.includes(3) &&
             completed.includes(5) &&
-            !wallet && (
+            !wallet && (  
               <div className="wallet-input">
                 <input
                   type="text"
